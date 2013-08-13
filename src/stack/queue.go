@@ -45,3 +45,7 @@ func (q *Queue) Pop() (value interface{}, ok bool) {
 	}
 	return
 }
+
+func (q Queue) IsEmpty() bool {
+	return q.count == 0
+}

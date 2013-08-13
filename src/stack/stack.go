@@ -33,4 +33,8 @@ func (s *Stack) Pop() (val interface{}, ok bool) {
 	}
 	return
 }
+
+func (s Stack) IsEmpty() bool {
+	return s.count == 0
+}
 	
