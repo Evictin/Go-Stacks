@@ -47,12 +47,8 @@ func main() {
 		q.Push(i)
 	}
 	
-	i := 0
 	for val, ok := q.Pop(); ok; val, ok = q.Pop() {
 		fmt.Println("Popped:", val);
-		if i++; i==10 {
-			break
-		}
 	}
 
 
